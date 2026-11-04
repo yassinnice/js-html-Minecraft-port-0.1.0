@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MC 0.1.0 Web Port</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; }
+        canvas { display: block; image-rendering: pixelated; }
+        #ui { position: absolute; top: 10px; left: 10px; color: lime; font-family: monospace; z-index: 10; }
+    </style>
+</head>
+<body>
+    <div id="ui">FPS: <span id="fpsDisplay">0</span></div>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Load order matters -->
+    <script src="fps.js"></script>
+    <script src="textures.js"></script>
+    <script src="sfx.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
